@@ -19,3 +19,9 @@ brew install macverbs
 | Formula | Project |
 |---------|---------|
 | `macverbs` | [macverbs](https://github.com/pfelrodrigues/macverbs) |
+
+## Casks
+
+| Cask | Project |
+|------|---------|
+| `reframed-bridge` | [Reframed Gallery](https://www.reframed.gallery/chrome-extension) (bridge p/ Samsung Frame TV) |

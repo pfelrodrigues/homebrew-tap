@@ -24,5 +24,4 @@ brew install macverbs
 
 | Cask | Project |
 |------|---------|
-| `grok-bot` | [Grok Bot](https://x.ai/bot) (app desktop; beta, Apple Silicon) |
 | `reframed-bridge` | [Reframed Gallery](https://www.reframed.gallery/chrome-extension) (bridge p/ Samsung Frame TV) |

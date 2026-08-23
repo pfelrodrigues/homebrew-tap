@@ -8,9 +8,9 @@
 class DigitalplusDl < Formula
   desc "Search and download Digital Plus Xtream VOD"
   homepage "https://github.com/pfelrodrigues/homebrew-tap"
-  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/digitalplus-dl-0.1.2/dp-0.1.2-aarch64-apple-darwin.tar.gz"
-  sha256 "6b79f9bf17812886d7a0e26dfd005f550a77c2a99e8fad7ac3505654bd966168"
-  version "0.1.2"
+  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/digitalplus-dl-0.3.0/dp-0.3.0-aarch64-apple-darwin.tar.gz"
+  sha256 "b1a1782651b2d5761b43c30ae5df0d904c67ec28793d31f0db335c98c734ec4c"
+  version "0.3.0"
   license "MIT"
 
   depends_on :macos
@@ -22,6 +22,6 @@ class DigitalplusDl < Formula
   end
 
   test do
-    assert_match "0.1.2", shell_output("#{bin}/dp --version")
+    assert_match "0.3.0", shell_output("#{bin}/dp --version")
   end
 end

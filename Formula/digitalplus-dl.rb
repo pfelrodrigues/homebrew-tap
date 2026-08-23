@@ -1,6 +1,6 @@
 # Homebrew formula for digitalplus-dl (binary: dp).
 #
-# Instala o executavel publicado. Codigo-fonte nao e publico.
+# Instala o executavel publicado e o completion fish. Codigo-fonte nao e publico.
 #
 #   brew install pfelrodrigues/tap/digitalplus-dl
 #
@@ -8,9 +8,9 @@
 class DigitalplusDl < Formula
   desc "Search and download Digital Plus Xtream VOD"
   homepage "https://github.com/pfelrodrigues/homebrew-tap"
-  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/digitalplus-dl-0.1.0/dp-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "4e36133a973fab288a11a57dc51881c9dee18f0e7ab345fa8e0def0aab7b8247"
-  version "0.1.0"
+  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/digitalplus-dl-0.1.1/dp-0.1.1-aarch64-apple-darwin.tar.gz"
+  sha256 "248db40be31c4cd24af0f7cfda7f0ef35b001e69ad38d61362e540cc44409738"
+  version "0.1.1"
   license "MIT"
 
   depends_on :macos
@@ -18,9 +18,10 @@ class DigitalplusDl < Formula
 
   def install
     bin.install "dp"
+    fish_completion.install "dp.fish"
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/dp --version")
+    assert_match "0.1.1", shell_output("#{bin}/dp --version")
   end
 end

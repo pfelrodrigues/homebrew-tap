@@ -1,10 +1,3 @@
-# Homebrew formula for digitalplus-dl (binary: dp).
-#
-# Instala o executavel publicado e o completion fish. Codigo-fonte nao e publico.
-#
-#   brew install pfelrodrigues/tap/digitalplus-dl
-#
-# Canonical tap: https://github.com/pfelrodrigues/homebrew-tap
 class DigitalplusDl < Formula
   desc "Search and download Digital Plus Xtream VOD"
   homepage "https://github.com/pfelrodrigues/homebrew-tap"

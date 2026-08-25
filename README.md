@@ -7,6 +7,7 @@ Homebrew tap for tools by [@pfelrodrigues](https://github.com/pfelrodrigues).
 ```bash
 brew install pfelrodrigues/tap/macverbs
 brew install pfelrodrigues/tap/digitalplus-dl
+brew install --cask pfelrodrigues/tap/try-omarchy
 ```
 
 Or, after the tap is present:
@@ -14,6 +15,7 @@ Or, after the tap is present:
 ```bash
 brew install macverbs
 brew install digitalplus-dl
+brew install --cask try-omarchy
 ```
 
 ## Formulas
@@ -28,3 +30,4 @@ brew install digitalplus-dl
 | Cask | Project |
 |------|---------|
 | `reframed-bridge` | [Reframed Gallery](https://www.reframed.gallery/chrome-extension) (bridge p/ Samsung Frame TV) |
+| `try-omarchy` | [Try Omarchy](https://github.com/themartiano/try-omarchy) (Omarchy como app no Apple Silicon) |

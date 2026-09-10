@@ -24,9 +24,13 @@ class Mimir < Formula
 
   def caveats
     <<~EOS
-      Connect Codex and start the local service:
+      Start the shared local service:
+        brew services start pfelrodrigues/tap/mimir
+      Connect a local stdio MCP client with:
+        /opt/homebrew/bin/mimir mcp
+      Optional Codex integration:
         mimir setup codex
-      Review and trust Mimir hooks in Codex, then start a new conversation.
+      Review any permissions requested by your agent.
       Diagnose the installation:
         mimir doctor
       Data stays in ~/Library/Application Support/Mimir/base after uninstall.

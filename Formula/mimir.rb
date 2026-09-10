@@ -1,9 +1,9 @@
 class Mimir < Formula
   desc "Local knowledge storage and shared memory for agents"
   homepage "https://github.com/pfelrodrigues/homebrew-tap"
-  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/mimir-0.1.0/mimir-0.1.0-aarch64-apple-darwin.tar.gz"
-  version "0.1.0"
-  sha256 "f21bcb2d0aeb5e58448d6d6e61bf6a1bedf57d4dfaeb8b89a1d55dee2f44dfcb"
+  url "https://github.com/pfelrodrigues/homebrew-tap/releases/download/mimir-0.2.0/mimir-0.2.0-aarch64-apple-darwin.tar.gz"
+  version "0.2.0"
+  sha256 "1f7572e6fe73c423f373329bac22107c1501493ed7d6e570eda3c2c6e85b75ff"
   license :cannot_represent
 
   depends_on macos: :sequoia
@@ -38,7 +38,7 @@ class Mimir < Formula
   end
 
   test do
-    assert_equal "0.1.0", shell_output("#{bin}/mimir --version").strip
+    assert_equal "0.2.0", shell_output("#{bin}/mimir --version").strip
     assert_match "ready", shell_output("#{bin}/mimir init #{testpath}/base")
   end
 end

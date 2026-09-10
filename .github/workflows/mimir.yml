@@ -1,0 +1,22 @@
+name: Mimir package
+on:
+  pull_request:
+    paths: [Formula/mimir.rb, .github/workflows/mimir.yml]
+  push:
+    branches: [main]
+    paths: [Formula/mimir.rb, .github/workflows/mimir.yml]
+permissions:
+  contents: read
+jobs:
+  install:
+    runs-on: macos-15
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install and test the published archive
+        run: |
+          brew tap-new mimir/ci --no-git
+          cp Formula/mimir.rb "$(brew --repository mimir/ci)/Formula/mimir.rb"
+          brew install mimir/ci/mimir
+          brew test mimir/ci/mimir
+          mimir --version
